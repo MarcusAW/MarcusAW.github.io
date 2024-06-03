@@ -1,0 +1,130 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Project</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+        <div id="wrapper" class="fade-in">
+
+            <!-- Intro -->
+                <div id="intro">
+                    <h1>My Portfolio</h1>
+                    <p>A showcase of my projects and publications.</p>
+                    <ul class="actions">
+                        <li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
+                    </ul>
+                </div>
+
+            <!-- Header -->
+                <header id="header">
+                    <a href="index.html" class="logo">Marcus Ang</a>
+                </header>
+
+            <!-- Nav -->
+                <nav id="nav">
+                    <ul class="links">
+                        <li><a href="index.html">About Me</a></li>
+                        <li class="active"><a href="research.html">CFD Research</a></li>
+                        <li><a href="publication.html">My Publications</a></li>
+                        <li><a href="project.html">Fun CFD Simulations</a></li>
+                        <li><a href="other.html">Other Cool Projects</a></li>
+                    </ul>
+                    <ul class="icons">
+                        <li><a href="https://linkedin.com/in/angmarcus/" class="icon brands fa-linkedin"><span class="label">Instagram</span></a></li>
+                        <li><a href="https://github.com/MarcusAW" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+                    </ul>
+                </nav>
+				<!-- Main -->
+					<div id="main">
+						<!-- Post -->
+							<section class="post">
+								<header class="major">
+									<h1>CFD Research</h1>
+                                    <p>Here is a collection of my research projects done during my graduate studies. Most of the research projects are funded; however, some projects are done as course projects.</p>
+								</header>
+							</section>
+                            <section class="post">
+                            <header>
+                                <h2>Porous Trailing Edge for Airfoil and Fan Noise Reduction at Low-Speed Stall Conditions</h2>
+                                <a href="#" class="image fit"><img src="images/porousTE_1.jpg" alt="" /></a>
+								<p>This study served as my thesis for the Master of Science degree where I was interested in reducing the noise produced by airfoils for electronic cooling fans. OpenFOAM was used to study the aeroacoustic impact of a porous trailing edge at low speeds and high angles of attack. The flow field around the airfoil was predicted using LES, while the acoustic properties were done using the Ffowcs Williams and Hawkings Equation. I was interested in the noise reduction mechanism caused by the flow field impacts of the porous media, so I employed a pore-scale approach instead of a volume-averaged approach to obtain an accurate depiction of the flow field around the porous media and the shear layer. The thesis concludes that the Kelvin-Helmholtz rolls are responsible for separation/stall noise, and five flow field effects contributed to the noise reduction. Find out more in my publications!</p>
+								<ul class="actions special">
+                                    <li><a href="https://github.com/MarcusAW/Aeroacoustics_Noise-Reduction-Using-Porous-Trailing-Edge" class="button">See the Repository</a></li>
+                                </ul>
+                            </header>
+                            </section>
+                            <section class="post">
+                                <header>
+                                    <h2>Pore-scale Simulation of the Capillary Rise in a Lattice Column</h2>
+                                    <a href="#" class="image fit"><img src="images/lattice_1.png" alt="" /></a>
+                                    <p>In my research laboratory, we were interested in the accurate modeling of capillary rise in uniform and non-uniform wick geometry. A simple validation case for a body-centered cubic (BCC) lattice column was created using a 3D-printed resin lattice and numerical results from the literature. Two working fluids were considered: water and methanol, and the numerical results from the literature align well with OpenFOAM’s prediction. Compared to experimental values, the results tended to underpredict the rate of rise and equilibrium height, and this was likely due to imperfections during printing. </p>
+                                    <ul class="actions special">
+                                        <li><a href="https://github.com/MarcusAW/Two-Phase-Flow_Capillary-Driven-BCC-Lattice" class="button">See the Repository</a></li>
+                                    </ul>
+                                </header>
+                            </section>
+                            <section class="post">
+                                <header>
+                                    <h2>Capillary Rise in Glass Capillary Tube</h2>
+                                    <a href="#" class="image fit"><img src="images/capillaryTube_1.jpg" alt="" /></a>
+                                    <p> As a graduate research assistant, I introduced the twoPhaseFlow library to the laboratory, but validation was required to ensure accurate predictions. Rate-of-rise experiments were carried out in a glass capillary tube with a diameter of 1.1mm, using alcohol as the working fluid, and an analytical solution was obtained using ODE 45. The results demonstrate that OpenFOAM can accurately predict the steady-state solution, but it tends to overpredict the rate of rise. For the initial conditions, we find that submerging the capillary tube deeper into the fluid tends to improve accuracy. Overall, we concluded that the steady state solution is accurate (<5% error); however, the rate of rise prediction can have greater errors (~10%).</p>
+                                    <ul class="actions special">
+                                        <li><a href="https://github.com/MarcusAW/Two-Phase-Flow_Capillary-Driven-Glass-Tube" class="button">See the Repository</a></li>
+                                    </ul>
+                                </header>
+                            </section>
+                            <section class="post">
+                                <header>
+                                    <h2>LES Study of the Effects of Wind Turbine Placement on Power Generation</h2>
+                                    <a href="#" class="image fit"><img src="images/turbine_1.jpg" alt="" /></a>
+                                    <p>This project was conducted as a term project in my Rotor Aerodynamics course, and it looked at how an upstream wind turbine's wake affected downstream turbines. The turbine blades were modeled as actuator lines using OpenFOAM, and the turbulence in the wake was predicted using LES. Three configurations of three wind turbines were considered: aligned axially, aligned diagonally, and aligned in a staggered pattern. The study concludes that the wake has a significant impact on the power production of downstream turbines due to the velocity deficit, and the severity is determined by the spacing and configuration. Most wind farm state ordinances in the U.S. suggest turbines that are too close to each other, and to increase a turbine's lifetime power production, care must be taken on wind turbine placement.</p>
+                                    <ul class="actions special">
+                                        <li><a href="https://github.com/MarcusAW/Actuator_Line_Method-Wind_Turbine_Arrangement" class="button">See the Repository</a></li>
+                                    </ul>
+                                </header>
+                            </section>
+                            <section class="post">
+                                <header>
+                                    <h2>Micro-Xray Tomography Based Pore-scale Simulation of Additively Manufactured Wicks</h2>
+                                    <a href="#" class="image fit"><img src="images/porousMedia_1.jpg" alt="" /></a>
+                                    <p>This investigation was carried out as part of my role as a graduate research assistant, and we were interested in accurate numerical predictions of existing additively conducted evaporator wicks. Colleagues at NASA JPL manufactured metallic porous media and generated high-quality micro-Xray computed tomography (μCT) data. After image segmentation and model reconstruction, a crucial smoothing step is introduced to remove artificial roughness due to the discrete nature of images. The developed open-source μCT to CFD pipeline was used to compare porosity and permeability with experimental data. Results show that the pore-scale simulations accurately predicted the measured permeability of the AM wick within 5.6% error and negligible errors in porosity.</p>
+                                    <ul class="actions special">
+                                        <li><a href="https://github.com/MarcusAW/Porous_Media-Micro_Xray_Computed_Tomography" class="button">See the Repository</a></li>
+                                    </ul>
+                                </header>
+                            </section>
+                            <section class="post">
+                                <header>
+                                    <h2>Influence of RANS turbulence model in CFD modeling of packed beds</h2>
+                                    <a href="#" class="image fit"><img src="images/porousMedia_2.jpg" alt="" /></a>
+                                    <p>This is a validation study for a term project in my Transport in Porous Media course, which investigated the accuracy of modeling a packed spherical bed using RANS. Packed beds are ideal for simple heat exchangers because of their configurable porosity and permeability; however, accurate turbulent modeling in complex pore geometries remains a challenge. Two turbulence models are considered, Spalart-Allmaras and RNG k-ε and the default coefficients are used. The results show that RNG k-ε outperforms Spalart-Allmaras in terms of predicted pressure drop across the porous media, while Spalart-Allmaras is more accurate in predicting the turbulent viscosity field. The project reminded me that all models are wrong, but some are useful!</p>
+                                    <ul class="actions special">
+                                        <li><a href="https://github.com/MarcusAW/Turbulence_Modelling-Spherical_Packed_Bed" class="button">See the Repository</a></li>
+                                    </ul>
+                                </header>
+                            </section>
+                    <article class="post featured">
+                        <header class="major">
+                            <h3><a href="#">Send me an Email</a></h3>
+                            <p>maw272727@gmail.com <br /> mwang1@shockers.wichita.edu</p>
+                        </header>
+                    </article>
+					</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
